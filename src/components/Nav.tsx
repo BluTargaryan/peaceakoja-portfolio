@@ -11,9 +11,9 @@ const Nav = () => {
 
 
   return (
-    <nav className="w-screen h-[79px] bg-black flex items-center justify-between p-8">
+    <nav className="w-full h-[79px] bg-black flex items-center justify-between p-8">
         <Link href='/' className={lustria.className}>
-            <span className="text-white text-[32px]">Peace</span>
+            <span className="text-gray-200 text-[32px]">Peace</span>
         </Link>
 <NavMenu/>
         
