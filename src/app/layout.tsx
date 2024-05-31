@@ -28,8 +28,8 @@ export default function RootLayout({
 }>) {
   
   return (
-    <html lang="en">
-      <body className={lato.className}>
+    <html lang="en" className=" scroll-smooth">
+      <body className={`${lato.className} bg-gray-200`}>
         <Nav/>
         {children}
         </body>

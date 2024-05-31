@@ -23,7 +23,7 @@ useEffect(()=>{
     
   return (
     <ul className=" w-40 h-full text-gray-200 text-xl flex items-center justify-between">
-            <li onClick={()=>routeHandler('/')} className="flex flex-col relative">
+            <li onClick={()=>routeHandler('/')} className="flex flex-col relative cursor-pointer">
                 <>
                 Home
                 </>
@@ -32,7 +32,7 @@ useEffect(()=>{
                   (activePage === '/') ?<div className="w-10 bg-white h-1 absolute top-12 left-0 rounded"></div>:''
                 }
             </li>
-            <li onClick={()=>routeHandler('/projects')} className="flex flex-col relative justify-center">
+            <li onClick={()=>routeHandler('/projects')} className="flex flex-col relative justify-center cursor-pointer">
                 <>
                 Projects
                 </>
