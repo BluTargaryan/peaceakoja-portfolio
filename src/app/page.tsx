@@ -5,6 +5,9 @@ import { lustria } from "./layout";
 import PAButtonWIcon from "@/components/PAButtonWIcon";
 import ProjectsPreviewItem from "@/components/ProjectsPreviewItem";
 
+import {motion as m} from 'framer-motion'
+import ScrollingText from "@/components/ScrollingText";
+
 export default function Home() {
 
   
@@ -51,6 +54,8 @@ export default function Home() {
    color="gray-200"/>
 
    </section>
+<ScrollingText/>
+
  </div>
   );
 }

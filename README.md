@@ -8,3 +8,6 @@ Init Git and setup project and cleaned up boilerplate, installing Shadcn and Rea
 
 ## Diary Entry 1
 Worked on the projects preview section. Implemented click to open and close functionality for each project item, as well as functionality to close each project item on outside click. Refactored buttonoutlined component into buttonwicon, using params to change styling.
+
+## Diary Entry 2
+Worked on the scrolling text component. Installed framer motion for the effect
