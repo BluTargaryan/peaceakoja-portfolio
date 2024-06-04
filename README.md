@@ -11,3 +11,6 @@ Worked on the projects preview section. Implemented click to open and close func
 
 ## Diary Entry 2
 Worked on the scrolling text component. Installed framer motion for the effect
+
+## Diary Entry 3
+Worked on the aboutme section, set down basics for flip profile image, experience/education divs and toolkit list
