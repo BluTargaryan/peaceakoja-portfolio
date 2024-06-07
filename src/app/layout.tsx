@@ -29,7 +29,7 @@ export default function RootLayout({
   
   return (
     <html lang="en" className=" scroll-smooth overflow-x-hidden">
-      <body className={`${lato.className} bg-gray-200`}>
+      <body className={`${lato.className} bg-customWhite`}>
         <Nav/>
         {children}
         </body>

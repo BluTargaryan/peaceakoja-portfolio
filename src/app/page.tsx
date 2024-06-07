@@ -8,6 +8,7 @@ import ProjectsPreviewItem from "@/components/ProjectsPreviewItem";
 import {motion as m} from 'framer-motion'
 import ScrollingText from "@/components/ScrollingText";
 import TechStackItem from "@/components/TechStackItem";
+import FooterLinks from "@/components/FooterLinks";
 
 export default function Home() {
 
@@ -22,9 +23,10 @@ export default function Home() {
    <PAButton submittedLink="#projects-preview"/>
    <PAButtonWIcon 
    submittedLink="/projects"
-   backgroundColor={true}
+   backgroundColor='transparent'
    typeLong={false}
-   color="customBlack"/>
+   color="customBlack"
+   borderColor="customBlack"/>
    
    </div>
    </div>
@@ -50,9 +52,10 @@ export default function Home() {
 </div>
 <PAButtonWIcon 
    submittedLink="/projects"
-   backgroundColor={false}
+   backgroundColor='customBlack'
    typeLong={true}
-   color="gray-200"/>
+   color="customWhite"
+   borderColor="customBlack"/>
 
    </section>
 <ScrollingText/>
@@ -104,6 +107,14 @@ title='HTML'/>
 </div>
 </section>
 
+<footer className="w-full h-[645px] bg-customBlack flex flex-col gap-20 items-center justify-center text-customWhite">
+<h2 className={`${lustria.className} text-5xl`}>Links</h2>
+<div className="w-4/5 flex gap-24 justify-center">
+<FooterLinks />
+<FooterLinks />
+</div>
+<p className="text-2xl">Painted by Peace</p>
+</footer>
  </div>
   );
 }

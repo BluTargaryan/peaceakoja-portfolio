@@ -14,3 +14,6 @@ Worked on the scrolling text component. Installed framer motion for the effect
 
 ## Diary Entry 3
 Worked on the aboutme section, set down basics for flip profile image, experience/education divs and toolkit list
+
+## Diary Entry 4
+Worked on the footer section, edited the PAWIcon button to allow for more custom styling. Done with laying bones.
