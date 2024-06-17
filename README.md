@@ -17,3 +17,6 @@ Worked on the aboutme section, set down basics for flip profile image, experienc
 
 ## Diary Entry 4
 Worked on the footer section, edited the PAWIcon button to allow for more custom styling. Done with laying bones.
+
+## Diary Entry 5
+Added images to the home page as well as reworked the pabuttonwicon component. Note: work on call and text functionality for footer and probably refactor

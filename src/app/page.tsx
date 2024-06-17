@@ -10,6 +10,22 @@ import ScrollingText from "@/components/ScrollingText";
 import TechStackItem from "@/components/TechStackItem";
 import FooterLinks from "@/components/FooterLinks";
 
+//importing images
+import PortCharHeader from '../../public/port char at work.png'
+import BobbleHead from '../../public/profile image.png'
+import PortCharEd from '../../public/port char at work 1.png'
+import PortCharExp from '../../public/port char at work 2.png'
+import JSImage from '../../public/js.png'
+import TSImage from '../../public/ts.png'
+import CSSImage from '../../public/css.png'
+import HTMLImage from '../../public/html.png'
+import ReactImage from '../../public/react.png'
+import FigmaImage from '../../public/figma.png'
+import DribbbleImage from '../../public/dribbble.png'
+import PhoneImage from '../../public/phone.png'
+import GithubImage from '../../public/github.png'
+import MailImage from '../../public/mail.png'
+
 export default function Home() {
 
   
@@ -26,13 +42,21 @@ export default function Home() {
    backgroundColor='transparent'
    typeLong={false}
    color="customBlack"
-   borderColor="customBlack"/>
+   borderColor="customBlack"
+   title="Go to Projects"/>
    
    </div>
    </div>
    
-   <div className="w-1/2 h-[483px] rounded-2xl bg-customBlue border-[3px] border-customBlack ">
-
+   <div className="w-1/2 h-[483px] rounded-2xl bg-customBlue border-[3px] border-customBlack flex items-center justify-center">
+   <Image 
+    src={PortCharHeader}
+    width="0"
+    height="0"
+    sizes="100vw"
+    className="w-5/6 h-auto"
+    alt="boy working on his computer setup"
+   />
    </div>
    </section>
 
@@ -55,17 +79,32 @@ export default function Home() {
    backgroundColor='customBlack'
    typeLong={true}
    color="customWhite"
-   borderColor="customBlack"/>
+   borderColor="customBlack"
+   title="Go to Projects"/>
 
    </section>
 <ScrollingText/>
 <section id="aboutme" className="h-[2557px] w-full flex flex-col items-center justify-center gap-36">
-<div className="w-[549px] h-[549px] bg-customBlack rounded-full">
-
+<div className="w-[549px] h-[549px] rounded-full border-0 bg-customBlack flex items-end justify-center ">
+<Image 
+    src={BobbleHead}
+    width="0"
+    height="0"
+    sizes="100vw"
+    className="w-3/4 h-auto"
+    alt="Cartoon profile image of the website creator"
+   />
 </div>
 <div className="w-full h-[417px] px-8 flex justify-between">
-<div className="w-2/5 h-[417px] rounded-2xl bg-customBlue border-[3px] border-customBlack ">
-
+<div className="w-2/5 h-[417px] rounded-2xl bg-customLightBlue border-[3px] border-customBlack flex items-center justify-center">
+<Image 
+    src={PortCharEd}
+    width="0"
+    height="0"
+    sizes="100vw"
+    className="w-5/6 h-auto"
+    alt="graduate working on his computer setup"
+   />
    </div>
 
    <div className="h-full w-1/2  flex flex-col items-end justify-center gap-20 text-right">
@@ -91,18 +130,39 @@ export default function Home() {
    </ul>
    </div>
 
-   <div className="w-2/5 h-[417px] rounded-2xl bg-customBlue border-[3px] border-customBlack ">
-
+   <div className="w-2/5 h-[417px] rounded-2xl bg-customBlue border-[3px] border-customBlack flex items-center justify-center">
+   <Image 
+    src={PortCharExp}
+    width="0"
+    height="0"
+    sizes="100vw"
+    className="w-5/6 h-auto"
+    alt="graduate working on his computer setup"
+   />
    </div>
 </div>
 
 <div className="flex flex-col items-center justify-center gap-20">
 <h2 className={`${lustria.className} text-5xl`}>Toolkit</h2>
-<div className="w-4/5 h-auto gap-24 flex justify-center border border-red-100">
+<div className="w-4/5 h-auto gap-24 flex justify-center">
 <TechStackItem
-title='HTML'/>
+title='HTML'
+image={HTMLImage}/>
 <TechStackItem
-title='HTML'/>
+title='CSS'
+image={CSSImage}/>
+<TechStackItem
+title='JavaScript'
+image={JSImage}/>
+<TechStackItem
+title='TypeScript'
+image={TSImage}/>
+<TechStackItem
+title='React'
+image={ReactImage}/>
+<TechStackItem
+title='Figma'
+image={FigmaImage}/>
 </div>
 </div>
 </section>
@@ -110,8 +170,27 @@ title='HTML'/>
 <footer className="w-full h-[645px] bg-customBlack flex flex-col gap-20 items-center justify-center text-customWhite">
 <h2 className={`${lustria.className} text-5xl`}>Links</h2>
 <div className="w-4/5 flex gap-24 justify-center">
-<FooterLinks />
-<FooterLinks />
+<FooterLinks 
+image={GithubImage}
+link="https://github.com/BluTargaryan"
+btnTitle="Go to Github"
+type="link"/>
+<FooterLinks 
+image={DribbbleImage}
+link="https://dribbble.com/peaceakoja"
+btnTitle="Go to Designs"
+type="link"/>
+
+<FooterLinks 
+image={PhoneImage}
+link="https://dribbble.com/peaceakoja"
+btnTitle="Call me"
+type="link"/>
+<FooterLinks 
+image={MailImage}
+link="https://dribbble.com/peaceakoja"
+btnTitle="Mail me"
+type="link"/>
 </div>
 <p className="text-2xl">Painted by Peace</p>
 </footer>

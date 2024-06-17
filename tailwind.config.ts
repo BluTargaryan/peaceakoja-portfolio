@@ -56,6 +56,7 @@ const config = {
         customBlue: '#1D5479',
         customBlack: '#0D0D0D',
         customWhite: '#F2F2F2',
+        customLightBlue: '#B7DEF7',
       },
       borderRadius: {
         lg: "var(--radius)",
