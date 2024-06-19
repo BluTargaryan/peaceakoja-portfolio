@@ -174,23 +174,23 @@ image={FigmaImage}/>
 image={GithubImage}
 link="https://github.com/BluTargaryan"
 btnTitle="Go to Github"
-type="link"/>
+isLinkType={true}/>
 <FooterLinks 
 image={DribbbleImage}
 link="https://dribbble.com/peaceakoja"
 btnTitle="Go to Designs"
-type="link"/>
+isLinkType={true}/>
 
 <FooterLinks 
 image={PhoneImage}
-link="https://dribbble.com/peaceakoja"
+link="+4407538774045"
 btnTitle="Call me"
-type="link"/>
+isLinkType={false}/>
 <FooterLinks 
 image={MailImage}
-link="https://dribbble.com/peaceakoja"
+link="opeyemiyolo@gmail.com"
 btnTitle="Mail me"
-type="link"/>
+isLinkType={false}/>
 </div>
 <p className="text-2xl">Painted by Peace</p>
 </footer>

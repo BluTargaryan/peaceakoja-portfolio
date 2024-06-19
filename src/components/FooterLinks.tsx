@@ -1,15 +1,16 @@
 import React from 'react'
 import PAButtonWIcon from './PAButtonWIcon'
 import Image, {StaticImageData} from 'next/image'
+import PAButtonWIconFunc from './PAButtonWIconFunc'
 
 interface footerType {
   image:StaticImageData,
   link:string,
   btnTitle:string,
-  type:string
+  isLinkType:Boolean
 }
 
-const FooterLinks = ({image,link,btnTitle,type}:footerType) => {
+const FooterLinks = ({image,link,btnTitle,isLinkType}:footerType) => {
   return (
     <div className='w-[214px] h-[214px] relative'>
         <div className='rounded-full w-full h-full bg-customWhite'>
@@ -24,13 +25,21 @@ const FooterLinks = ({image,link,btnTitle,type}:footerType) => {
         </div>
 
        <div className='absolute bottom-0 left-0'>
+       {isLinkType?
        <PAButtonWIcon
+       submittedLink={link}
+       backgroundColor='customWhite'
+       typeLong={false}
+       color="customBlack"
+       borderColor='customBlack'
+       title={btnTitle}/>:
+       <PAButtonWIconFunc
    submittedLink={link}
    backgroundColor='customWhite'
    typeLong={false}
    color="customBlack"
    borderColor='customBlack'
-   title={btnTitle}/>
+   title={btnTitle}/>}
        </div>
     </div>
   )
