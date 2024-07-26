@@ -1,3 +1,7 @@
+
+
+import { useState, useEffect } from "react";
+
 import Image from "next/image";
 import PAButton from "@/components/PAButton";
 import Link from "next/link";
@@ -27,7 +31,15 @@ import PhoneImage from '../../public/phone.png'
 import GithubImage from '../../public/github.png'
 import MailImage from '../../public/mail.png'
 
+import ProjectsList from "@/components/ProjectsList";
+
+import projectsList from "./projectsList";
+
+
+
 export default function Home() {
+
+   
 
   
   return (
@@ -69,13 +81,7 @@ export default function Home() {
   <h2 className={`${lustria.className} text-5xl`}>Projects</h2>
   <p className="text-2xl">Click an item to expand it</p>
 </div>
-<div className="flex w-3/5 h-[479px] gap-2">
-<ProjectsPreviewItem/>
-<ProjectsPreviewItem/>
-<ProjectsPreviewItem/>
-<ProjectsPreviewItem/>
-<ProjectsPreviewItem/>
-</div>
+<ProjectsList />
 <PAButtonWIcon 
    submittedLink="/projects"
    backgroundColor='customBlack'

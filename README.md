@@ -22,7 +22,10 @@ Worked on the footer section, edited the PAWIcon button to allow for more custom
 Added images to the home page as well as reworked the pabuttonwicon component. Note: work on call and text functionality for footer and probably refactor
 
 ## Diary Entry 6
-Duplicated pabuttonwicon component to make pabuttonwiconfunc component, for special cases such as to open mail or call apps. Applied to mail and call links in footer section. Done with footer. Note
+Duplicated pabuttonwicon component to make pabuttonwiconfunc component, for special cases such as to open mail or call apps. Applied to mail and call links in footer section. Done with footer
 
 ## Diary Entry 7
-Added a fixed menu component, for easy navigation.
+Added a fixed menu component, for easy navigation
+
+## Diary Entry 7.2
+Added a project list data file for project details. Refactored project list and created a component for it. 
