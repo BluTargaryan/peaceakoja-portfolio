@@ -4,6 +4,7 @@ import Link from "next/link";
 import { lustria } from "./layout";
 import PAButtonWIcon from "@/components/PAButtonWIcon";
 import ProjectsPreviewItem from "@/components/ProjectsPreviewItem";
+import FixedPageMenu from "@/components/FixedPageMenu";
 
 import {motion as m} from 'framer-motion'
 import ScrollingText from "@/components/ScrollingText";
@@ -31,10 +32,11 @@ export default function Home() {
   
   return (
  <div className="flex flex-col items-center">
+   <FixedPageMenu />
    <section id="starter" className="flex w-full   text-customBlack h-[800px] items-center justify-between px-8">
    <div className="w-2/5 h-96  flex flex-col justify-between">
     <h1 className={`${lustria.className} text-6xl leading-tight`}>Welcome to the portfolio of Peace Akoja</h1>
-
+    
     <div className="flex w-full  gap-5">
    <PAButton submittedLink="#projects-preview"/>
    <PAButtonWIcon 
@@ -167,7 +169,7 @@ image={FigmaImage}/>
 </div>
 </section>
 
-<footer className="w-full h-[645px] bg-customBlack flex flex-col gap-20 items-center justify-center text-customWhite">
+<footer id="home-footer" className="w-full h-[645px] bg-customBlack flex flex-col gap-20 items-center justify-center text-customWhite">
 <h2 className={`${lustria.className} text-5xl`}>Links</h2>
 <div className="w-4/5 flex gap-24 justify-center">
 <FooterLinks 

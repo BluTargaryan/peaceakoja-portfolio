@@ -23,3 +23,6 @@ Added images to the home page as well as reworked the pabuttonwicon component. N
 
 ## Diary Entry 6
 Duplicated pabuttonwicon component to make pabuttonwiconfunc component, for special cases such as to open mail or call apps. Applied to mail and call links in footer section. Done with footer. Note
+
+## Diary Entry 7
+Added a fixed menu component, for easy navigation.
