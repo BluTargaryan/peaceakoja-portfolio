@@ -24,7 +24,7 @@ console.log(projectListState)
   <>
    {
     projectListState.length>0 && 
-    <div className="flex w-3/5 h-[479px] gap-2">
+    <div className="flex flex-col w-11/12 h-[200px] gap-2">
     {projectListState.map(project => (
               <ProjectsPreviewItem 
               key={project.name}

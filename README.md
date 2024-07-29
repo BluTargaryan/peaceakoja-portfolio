@@ -29,3 +29,6 @@ Added a fixed menu component, for easy navigation
 
 ## Diary Entry 7.2
 Added a project list data file for project details. Refactored project list and created a component for it. 
+
+## Diary Entry 8
+End of this version of the project. Commencing project in another nextjs build to focus on mobile first design.

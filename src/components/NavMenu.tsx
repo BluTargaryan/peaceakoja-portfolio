@@ -22,7 +22,7 @@ useEffect(()=>{
 })
     
   return (
-    <ul className=" w-40 h-full text-gray-200 text-xl flex items-center justify-between">
+    <ul className=" w-40 h-full text-gray-200 text-xl hidden items-center justify-between">
             <li onClick={()=>routeHandler('/')} className="flex flex-col relative cursor-pointer">
                 <>
                 Home

@@ -45,11 +45,11 @@ export default function Home() {
   return (
  <div className="flex flex-col items-center">
    <FixedPageMenu />
-   <section id="starter" className="flex w-full   text-customBlack h-[800px] items-center justify-between px-8">
-   <div className="w-2/5 h-96  flex flex-col justify-between">
-    <h1 className={`${lustria.className} text-6xl leading-tight`}>Welcome to the portfolio of Peace Akoja</h1>
+   <section id="starter" className="flex flex-col-reverse w-full   text-customBlack items-center justify-between py-20 gap-16">
+   <div className="w-11/12 gap-10 flex flex-col justify-between">
+    <h1 className={`${lustria.className} text-4xl text-center leading-tight`}>Welcome to the portfolio of Peace Akoja</h1>
     
-    <div className="flex w-full  gap-5">
+    <div className="flex flex-col w-full  gap-5">
    <PAButton submittedLink="#projects-preview"/>
    <PAButtonWIcon 
    submittedLink="/projects"
@@ -62,7 +62,7 @@ export default function Home() {
    </div>
    </div>
    
-   <div className="w-1/2 h-[483px] rounded-2xl bg-customBlue border-[3px] border-customBlack flex items-center justify-center">
+   <div className="w-11/12 h-[280px]  rounded-2xl bg-customBlue border-[3px] border-customBlack flex items-center justify-center">
    <Image 
     src={PortCharHeader}
     width="0"
@@ -74,12 +74,12 @@ export default function Home() {
    </div>
    </section>
 
-   <div className="w-4/5 bg-customBlack h-1"></div>
+   <div className="w-4/5 bg-customBlack h-1 hidden"></div>
 
-    <section id="projects-preview" className="flex flex-col gap-14 w-full   text-customBlack h-[954px] items-center justify-center p-8">
-<div className="flex flex-col items-center gap-6">
-  <h2 className={`${lustria.className} text-5xl`}>Projects</h2>
-  <p className="text-2xl">Click an item to expand it</p>
+    <section id="projects-preview" className="flex flex-col gap-14 w-full h-[500px] border-2 border-red-200 text-customBlack  items-center justify-center p-8">
+<div className="flex flex-col items-center gap-4">
+  <h2 className={`${lustria.className} text-3xl`}>Projects</h2>
+  <p className="text-base">Click an item to expand it</p>
 </div>
 <ProjectsList />
 <PAButtonWIcon 

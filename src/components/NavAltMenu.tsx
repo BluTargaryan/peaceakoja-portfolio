@@ -11,40 +11,30 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
-const FixedPageMenu = () => {
+const NavAltMenu = () => {
 
   const menuList = [
     {
       id:1,
-      sectionName:'Welcome',
-      sectionLink:'/#starter'
+      sectionName:'Home',
+      sectionLink:'/'
     },
     {
       id:2,
       sectionName:'Projects',
-      sectionLink:'/#projects-preview'
-    },
-    {
-      id:3,
-      sectionName:'About Me',
-      sectionLink:'/#aboutme'
-    },
-    {
-      id:4,
-      sectionName:'Links',
-      sectionLink:'/#home-footer'
+      sectionLink:'/projects'
     },
   ]
   return (
     <DropdownMenu>
-  <DropdownMenuTrigger className='fixed bottom-8 right-8 bg-customBlack rounded-lg w-16 h-16 z-50 flex items-center justify-center'>
-    <MdMenu className='text-4xl text-customWhite'/>
+  <DropdownMenuTrigger className='z-10 flex items-center justify-center'>
+    <MdMenu className='text-xl text-customWhite'/>
     </DropdownMenuTrigger>
-  <DropdownMenuContent className='bg-customBlack rounded-lg z-50 text-customWhite '>
+  <DropdownMenuContent className='bg-customBlack rounded-lg text-customWhite'>
 
   {menuList.map((item, index )=> (
     <React.Fragment key={item.id}>
-<DropdownMenuItem className='hover:text-customBlack cursor-pointer'>
+<DropdownMenuItem className='hover:text-customBlack cursor-pointer w-96'>
               <Link href={item.sectionLink}>{item.sectionName}</Link>
             </DropdownMenuItem>
             {index < menuList.length -1 && <DropdownMenuSeparator />}
@@ -58,4 +48,4 @@ const FixedPageMenu = () => {
   )
 }
 
-export default FixedPageMenu
+export default NavAltMenu

@@ -10,7 +10,7 @@ interface linkType {
 
 const PAButton = ({submittedLink}:linkType) => {
   return (
-    <Button  asChild className='w-52 h-14 flex items-center text-gray-200 text-xl bg-customBlack rounded-lg'>
+    <Button  asChild className='w-full h-14 flex items-center text-gray-200 text-xl bg-customBlack rounded-lg'>
    <Link href={submittedLink}>Continue</Link>
    </Button>
   )

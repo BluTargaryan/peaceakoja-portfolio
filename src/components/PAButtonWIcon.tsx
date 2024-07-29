@@ -16,7 +16,7 @@ interface linkSpec {
 
 const PAButtonWIcon = ({submittedLink,backgroundColor,typeLong, color, borderColor, title}:linkSpec) => {
   return (
-    <Button className={`${typeLong?'w-[447px]':'w-52'} h-14 flex items-center justify-between px-3.5 text-${color} text-xl bg-${backgroundColor} border-[3px] border-${borderColor} rounded-lg
+    <Button className={`${typeLong?'w-[447px]':'w-full'} h-14 flex items-center justify-between px-3.5 text-${color} text-xl bg-${backgroundColor} border-[3px] border-${borderColor} rounded-lg
     hover:pr-2.5 hover:${backgroundColor?'bg-transparent':''} transition-all`}>
    <Link href={submittedLink}>{title}</Link>
 <MdArrowRightAlt className='text-3xl'/>
